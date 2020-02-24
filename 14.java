@@ -17,33 +17,53 @@ class Forteen {
   afternickels = afterdimes%5;
   aftercents = afternickels;
 
-  if(quarters == 0 && dimes != 0 && nickels != 0 &&cents != 0)
-    System.out.println(cents +" cents: " + dimes + " dimes," + nickels + " nickels, " + aftercents + " cnets.");
-  else if (quarters != 0 && dimes == 0 && nickels != 0 &&cents != 0)
-    System.out.println(cents +" cents: " + quarters + " quarters," + nickels + " nickels, " + aftercents + " cnets.");
-  else if (quarters != 0 && dimes != 0 && nickels == 0 &&cents != 0)
-    System.out.println(cents +" cents: " + quarters + " quarters," + dimes + " dimes," + aftercents + " cnets.");
-  else if (quarters != 0 && dimes != 0 && nickels != 0 &&cents == 0)
-    System.out.println(cents +" cents: " + quarters + " quarters," + dimes + " dimes," + nickels + " nickels.");
-  else if (quarters == 0 && dimes == 0 && nickels != 0 &&cents != 0)
-    System.out.println(cents +" cents: " + nickels + " nickels, " + aftercents + " cents.");
-  else if (quarters != 0 && dimes == 0 && nickels == 0 &&cents != 0)
-    System.out.println(cents +" cents: " + quarters + " quarters, " + aftercents + " cents.");
-  else if (quarters != 0 && dimes != 0 && nickels == 0 &&cents == 0)
-    System.out.println(cents +" cents: " + quarters + " quarters, " + dimes + " dimes.");
-  else if (quarters == 0 && dimes != 0 && nickels != 0 &&cents == 0)
-    System.out.println(cents +" cents: " + dimes + " dimes, " + nickels + " nickels.");
-  else if (quarters == 0 && dimes == 0 && nickels == 0 &&cents != 0)
-    System.out.println(cents +" cents: " + aftercents + " cents.");
-  else if (quarters != 0 && dimes == 0 && nickels == 0 &&cents == 0)
-    System.out.println(cents +" cents: " + quarters + " quarters.");
-  else if (quarters == 0 && dimes != 0 && nickels == 0 &&cents == 0)
-    System.out.println(cents +" cents: " + dimes + " dimes.");
-  else if (quarters == 0 && dimes == 0 && nickels != 0 &&cents == 0)
-    System.out.println(cents +" cents: " + nickels + " nickels.");
-  else if (quarters == 0 && dimes == 0 && nickels == 0 &&cents == 0)
-    System.out.println(cents +" cents: " + " None.");
-  else 
-    System.out.println(cents +" cents: " + quarters + " quarters," + dimes + " dimes," + nickels + " nickels, " + aftercents + " cnets.");
+if (quarters==0&&dimes!=0&&nickels!=0&&centsLeft!=0) {
+  System.out.println(cents+" cents: "+dimes+" dimes, "+nickels+" nickels, "+centsLeft+" cents.");
+    }
+else if (quarters!=0&&dimes==0&&nickels!=0&&centsLeft!=0) {
+  System.out.println(cents+" cents: "+quarters+" quarters, "+nickels+" nickels, "+centsLeft+" cents.");
+    }
+else if (quarters!=0&&dimes!=0&&nickels==0&&centsLeft!=0) {
+  System.out.println(cents+" cents: "+quarters+" quarters, "+dimes+" dimes, "+centsLeft+" cents.");
    }
+else if (quarters!=0&&dimes!=0&&nickels!=0&&centsLeft==0) {
+  System.out.println(cents+" cents: "+quarters+" quarters, "+dimes+" dimes, "+nickels+" nickels.");
+  }
+else if (quarters==0&&dimes==0&&nickels!=0&&centsLeft!=0) {
+  System.out.println(cents+" cents: "+nickels+" nickels, "+centsLeft+" cents.");
+  }
+else if (quarters!=0&&dimes==0&&nickels==0&&centsLeft!=0) {
+  System.out.println(cents+" cents: "+quarters+" quarters, "+centsLeft+" cents.");
+  }
+else if (quarters!=0&&dimes!=0&&nickels==0&&centsLeft==0) {
+  System.out.println(cents+" cents: "+quarters+" quarters, "+dimes+" dimes.");
+  }
+else if (quarters==0&&dimes!=0&&nickels!=0&&centsLeft==0) {
+  System.out.println(cents+" cents: "+dimes+" dimes, "+nickels+" nickels.");
+  }
+else if (quarters!=0&&dimes==0&&nickels!=0&&centsLeft==0) {
+  System.out.println(cents+" cents: "+quarters+" quarters, "+nickels+" nickels.");
+  }
+else if (quarters==0&&dimes!=0&&nickels==0&&centsLeft!=0) {
+  System.out.println(cents+" cents: "+dimes+" dimes, "+centsLeft+" cents.");
+  }
+else if (quarters!=0&&dimes==0&&nickels==0&&centsLeft==0) {
+  System.out.println(cents+" cents: "+quarters+" quarters.");
+  }
+else if (quarters==0&&dimes!=0&&nickels==0&&centsLeft==0) {
+  System.out.println(cents+" cents: "+dimes+" dimes.");
+  }
+else if (quarters==0&&dimes==0&&nickels!=0&&centsLeft==0) {
+  System.out.println(cents+" cents: "+nickels+" nickels.");
+  }
+else if (quarters==0&&dimes==0&&nickels==0&&centsLeft!=0) {
+  System.out.println(cents+" cents: "+centsLeft+" cents.");
+  }
+else if (quarters==0&&dimes==0&&nickels==0&&centsLeft==0) {
+  System.out.println(cents+" cents: N/A.");
+  }
+else {
+  System.out.println(cents+" cents: "+quarters+" quarters, "+dimes+" dimes, "+nickels+" nickels, "+centsLeft+" cents. ");
+  }
+ }
 }
