@@ -13,15 +13,9 @@ class Ten {
   else if(mass <= 100) {
     System.out.println("The cost of mailing a letter is 70 sinas");
   }
-  else if(mass > 100) {
-    mass = mass - 100;
-    if (mass < 50) {
-      System.out.println("The cost of mailing a letter is 70 sinas");
-    }
-    else if (mass >= 50) {
-      mass = mass/50 * 25 + 70;
-      System.out.println("The cost of mailing a letter is " + mass + " sinas.");
-    }
+  else {
+    cost = ((((int) (mass - 100) / 50) * 25)) + 70;
+    System.out.println("The cost of mailing a letter is " + csot + " sinas");
   }
   }
 }
