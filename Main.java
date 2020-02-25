@@ -15,7 +15,7 @@ class Ten {
   }
   else {
     cost = ((((int) (mass - 100) / 50) * 25)) + 70;
-    System.out.println("The cost of mailing a letter is " + csot + " sinas");
+    System.out.println("The cost of mailing a letter is " + cost + " sinas");
   }
   }
 }
