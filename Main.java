@@ -3,7 +3,7 @@ class Ten {
   public static void main(String[] args) {
   Scanner sc = new Scanner(System.in);
   System.out.println("Enter the mass number of the letter");
-  int mass = sc.nextInt();
+  double mass = sc.nextDouble();
   if (mass <= 30) {
     System.out.println("The cost of mailing a letter is 40 sinas");
   }
